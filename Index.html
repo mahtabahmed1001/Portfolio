@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Protfolio</title>
         <link rel="stylesheet" href="Style.css">
         <script src="https://kit.fontawesome.com/ea79a48670.js" crossorigin="anonymous"></script>
@@ -8,17 +9,19 @@
     </head>
 
     <body>
-        <div id="header" id="home">
+        <div id="header">
             <div class="container">
                 <nav>
                     <img src="Images/Screenshot_3.png" class="logo">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Service</a></li>
                         <li><a href="#protfolio">Protfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-sharp fa-regular fa-circle-xmark" onclick="closemenu();"></i>
                     </ul>
+                    <i class="fas fa-solid fa-bars" onclick="openmenu();"></i>
                 </nav>
                 <div class="header-text">
                     <p>Front-End Developer</p>
